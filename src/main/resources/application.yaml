@@ -1,0 +1,27 @@
+server:
+  port: 5000 
+  servlet:
+    context-path: /monsterlab
+
+spring:
+  application:
+    name: monsterlab-api
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://;serverName=azure-server-demo-jester.database.windows.net;databaseName=azure-db-demo-jester;encrypt=true
+    username: projects-javareact-admin
+    password: javafun!0
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "beans"
+          - "health"
+          - "info"
