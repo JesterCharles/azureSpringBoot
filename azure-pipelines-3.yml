@@ -33,3 +33,4 @@ steps:
     containerRegistry: 'monsterLabjesterr'
     repository: 'springbootdemo'
     command: 'push'
+    tags: latest
