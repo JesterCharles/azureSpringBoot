@@ -41,7 +41,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>monsterlabjesterr.azurecr.io/monsterlab</name>
+						<name>monsterlabjesterr.azurecr.io/springbootdemo</name>
 					</image>
 				</configuration>
 			</plugin>
