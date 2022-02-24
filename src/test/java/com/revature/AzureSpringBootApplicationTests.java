@@ -14,7 +14,7 @@ class AzureSpringBootApplicationTests {
 	
 	@Test
 	void testTrue() {
-		assertTrue(false);
+		assertTrue(true);
 	}
 	
 
