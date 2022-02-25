@@ -10,9 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AzureSpringBootApplication {
 	
+	private int counter;
+	
 	@GetMapping("/testingCICD")
 	public String testingCiCd() {
-		return "Hello from the pipelines";
+		counter++;
+		return "Hello from the pipelines. You are request number: " + counter;
 	}
 
 	public static void main(String[] args) {
